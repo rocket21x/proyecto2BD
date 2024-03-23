@@ -17,20 +17,20 @@ public class Licencia implements Serializable {
     private Integer numeroLicencia;
     
     @Column(name = "FechaExpedicion")
-    private Date fechaExpedicion;
+    public Date fechaExpedicion;
     
     @Column(name = "Vigencia")
-    private Integer vigencia;
+    public Integer vigencia;
     
     @Column(name = "Monto", precision = 8, scale = 2)
-    private BigDecimal monto;
+    public BigDecimal monto;
     
     @Column(name = "Tipo", length = 20)
-    private String tipo;
+    public String tipo;
     
     @ManyToOne
     @JoinColumn(name = "RFC")
-    private Persona persona;
+    public Persona persona;
     
     public Licencia() {
         // Constructor vacío requerido por JPA
