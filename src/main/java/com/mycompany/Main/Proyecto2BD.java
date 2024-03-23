@@ -7,7 +7,7 @@ package com.mycompany.Main;
 import Formularios.MenuGUI;
 
 /**
- *
+ * test
  * @author jesus
  */
 public class Proyecto2BD {
